@@ -7,7 +7,7 @@ use Illuminate\Support\Str;
 
 class MediaService
 {
-  public static function upload($file, $folder = "upload")
+  public static function upload($file, $folder = "uploads",)
   {
     // File Name (Original Name)
     $name = Str::slug($file->getClientOriginalName());
